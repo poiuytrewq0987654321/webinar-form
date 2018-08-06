@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>formularz rejestracji</title>
 </head>
+
 <body>
-    
+    <form action="https://formspree.io/bundushathurh@o2.pl" method="POST">
+
+        <input type="text" name="fname" placeholder="Imię" required>
+        <input type="text" name="sname" placeholder="Nazwisko" required>
+        <input type="email" name="_replyto" placeholder="Email" required>
+        <label for="ticket">wybierz rodzaj biletu:</label>
+        <select name="ticket" id="ticket">
+        <option value="normalny">normalny</option>
+        <option value="premium">premium</option>
+        <option value="vip">vip</option>
+        </select>
+        
+        <p>Menu wegańskie:</p>
+        <label><input type="radio" name="vegan-menu" value="tak">TAK</label>
+        <label><input type="radio" name="vegan-menu" value="nie" checked>NIE</label>
+        
+        <label for="message">Dodatkowe uwagi:</label>
+        <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        
+        <label><input type="checkbox" name="agreement" required>Wyrażam zgodę na przetwarzanie danych osobowych na potrzeby realizacji zapisów</label>
+        
+        <input type="submit" value="Zapisz i wyślij">
+        
+    </form>
 </body>
+
 </html>
